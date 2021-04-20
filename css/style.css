@@ -1,0 +1,90 @@
+body {
+  position: relative;
+  overflow-x: hidden;
+}
+
+.menu {
+  background-color: rgba(199, 192, 192, 0.083);
+  position: relative;
+  z-index: 2;
+}
+
+nav .menu__bar {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr auto;
+      grid-template-columns: auto 1fr auto;
+  grid-column-gap: 3%;
+  padding: 35px 0px 35px 0px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu__text {
+  margin-top: 2px;
+}
+
+nav .menu__bar > ul > li {
+  display: inline-block;
+  list-style: none;
+  vertical-align: middle;
+}
+
+nav .menu__bar .menu__link {
+  text-decoration: none;
+  text-transform: none;
+  display: inline-block;
+  position: relative;
+  font-weight: 600;
+  font-size: 17px;
+  color: #201c1f;
+}
+
+nav .menu__bar > ul > li.active {
+  margin-top: 3px;
+  border-bottom: 3px solid rgba(87, 85, 85, 0.289);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.menu__bar > ul > li + li {
+  margin-left: 20px;
+}
+
+.menu__sing {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 200px;
+}
+
+.menu__sing .sing-link {
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  padding: 2px;
+}
+
+.wrapper {
+  width: 100%;
+  min-width: 1480px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0px 35px 0px 35px;
+  position: relative;
+  z-index: 1;
+}
+
+nav.menu > div.wrapper > div.menu__bar > ul.menu__sing > li > a.sing-link.button {
+  padding: 10px;
+  border-radius: 9px;
+  border: 1px solid black;
+  text-transform: uppercase;
+  outline-color: black;
+}
+
+nav .menu__bar > ul + ul > li + li {
+  margin-left: 30px;
+}
